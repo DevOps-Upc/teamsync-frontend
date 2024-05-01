@@ -1,9 +1,12 @@
 import {createRouter, createWebHistory} from "vue-router"
-
+import HomeProyectComponent from "../proyect/pages/home-proyect.component.vue";
+let  id;
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path:'/', redirect:''}
+        {path:`/id/home`,component: HomeProyectComponent, meta:{title:'Home'}},
+
+
     ]
 
 })
