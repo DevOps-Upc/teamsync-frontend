@@ -66,13 +66,13 @@ export default {
 
           <div class="DivHome">
             <h2>Assigned Tasks</h2>
-            <div class="grid">
-              <div class="col-4" v-for="task in tasks" :key="task.id">
-                <pv-card class="card" >
-                  <template #content>
-                    <h3>{{task.name}}</h3>
-                  </template>
-                </pv-card>
+            <div class="xl:grid sm:flex">
+              <div class="xl:col-4 sm:flex-column" v-for="task in tasks" :key="task.id">
+                <div class="card1">
+                  <img src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png">
+                  <h3>{{task.name}}</h3>
+                </div>
+
               </div>
             </div>
           </div>
@@ -82,13 +82,11 @@ export default {
 
           <div class="DivHome">
             <h2>Files</h2>
-            <div class="grid">
-              <div class="col-4" v-for="file in files" :key="file.id">
-                <pv-card class="card" >
-                  <template #content>
-                    <h3>{{file.name}}</h3>
-                  </template>
-                </pv-card>
+            <div class="xl:grid sm:flex">
+              <div class="xl:col-4 sm:flex-column" v-for="file in files" :key="file.id">
+                <div class="card1" >
+                  <h3>{{file.name}}</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -101,11 +99,10 @@ export default {
       <div class="DivHome">
         <h2>Comments</h2>
         <div class="flex flex-column ">
-          <pv-card class="card mt-4" v-for="comment in comments" :key="comment.id">
-            <template #content>
-              <h3>{{comment.content}}</h3>
-            </template>
-          </pv-card>
+          <div class="card1" v-for="comment in comments" :key="comment.id">
+            <img src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png">
+            <h3>{{comment.content}}</h3>
+          </div>
         </div>
       </div>
 
@@ -123,9 +120,27 @@ export default {
 
 }
 .card{
+  display:flex;
   border-radius:16px;
   align-items:center;
+  padding:5px;
+  background-color: white;
 
+
+}
+.card1{
+  display:flex;
+  border-radius:16px;
+  align-items:center;
+  padding:5px;
+  background-color: white;
+  margin-top:10px;
+  >img{
+    height:51px;
+    width:51px;
+    border-radius:50%;
+    margin-right: 10px;
+  }
 }
 h2 {
   font-style: normal;
@@ -135,3 +150,4 @@ h2 {
 
 
 </style>
+

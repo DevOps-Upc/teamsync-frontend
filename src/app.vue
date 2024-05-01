@@ -17,13 +17,15 @@ export default {
 
 <template>
   <ToolbarComponent></ToolbarComponent>
-  <router-view></router-view>
-
-
-
+  <div class="container">
+    <router-view></router-view>
+  </div>
 
 </template>
 
 <style scoped>
+.container{
+  padding-top:61.45px;
+}
 
 </style>

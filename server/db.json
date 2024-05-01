@@ -15,7 +15,7 @@
     {
       "id": 0,
       "name": "Tarea 1",
-      "state": 0,
+      "state": 1,
       "id_integrate": null,
       "id_project": 0
     },
@@ -25,6 +25,20 @@
       "state": 1,
       "id_integrate": 0,
       "id_project": 1
+    },
+    {
+      "id": 2,
+      "name": "Tarea 3",
+      "state": 1,
+      "id_integrate": null,
+      "id_project": 0
+    },
+    {
+      "id": 3,
+      "name": "Tarea 4",
+      "state": 1,
+      "id_integrate": null,
+      "id_project": 0
     }
   ],
   "integrates": [
@@ -35,7 +49,7 @@
       "id": 0,
       "id_project": 0,
       "id_profile": 0,
-      "content": "Mejorar el encabezado"
+      "content": "Mejorar el encabezado ghfhgfhfghgfhfg hfg h fgh gf hgf h gf h fg h fg h fg hfg h fg h fg h fg h fgh fg h gf h fg h fg h f h fg h fgh fg h fg h f fghgfhgfhgf hgf hfg h gfh fgh gfh gfh gfh g hfg h g fh f h  gfhg f hgfhgh hgf h g h gf hfg h f gh gf h fg h gf h gf hg fh  g hf h f hf gh fgh fgh  gh f hf g hfgh"
 
     },
     {

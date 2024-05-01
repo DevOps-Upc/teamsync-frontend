@@ -8,11 +8,11 @@ export default {
   data(){
     return{
       item:[
-        {label:'Home',to:'/home'},
-        {label:'Task',to:'/task'},
-        {label:'Members',to:'/members'},
-        {label:'Request Expert',to:'/request_experts'},
-        {label:'Calendar',to:'/calendar'}
+        {label:'Home',to:'/id/home'},
+        {label:'Task',to:'/id/tasks'},
+        {label:'Members',to:'/id/members'},
+        {label:'Request Expert',to:'/id/request_experts'},
+        {label:'Calendar',to:'/id/calendar'}
 
       ]
 
@@ -46,6 +46,11 @@ export default {
 
 <style scoped>
   .toolbarStudent{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
     background-color: #757FFF;
 
   }
