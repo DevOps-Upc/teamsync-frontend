@@ -1,12 +1,28 @@
-<script setup>
+<script>
+import LoginCard from "./login/pages/login-card.vue";
+export default {
+  name: 'App',
+  title: 'DevSoft TeamSync',
+  components: {
+    LoginCard
+  },
+  data(){
+    return{
 
+    }
+  },
+  methods(){
+
+  }
+}
 </script>
 
 <template>
-  <h1>Holaaa</h1>
+
+  <LoginCard></LoginCard>
+  <router-view></router-view>
 
 </template>
 
 <style scoped>
-
 </style>
