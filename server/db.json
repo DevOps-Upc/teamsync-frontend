@@ -1,0 +1,260 @@
+{
+  "books":
+[
+  {
+    "id": 72978,
+    "date": "2024-04-30T04:00:00",
+    "link": "https://www.nginx.com/blog/a-containerized-waf-to-secure-apps-and-apis/",
+    "title": "A Containerized WAF to Secure Apps and APIs - NGINX",
+    "description": "Version 5.0 of NGINX App Protect WAF is designed for public cloud, private cloud, and on-premises deployments in a containerized form factor, which reduces the attack surface.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72956,
+    "date": "2024-04-04T08:00:09",
+    "link": "https://www.nginx.com/blog/insights-from-the-2024-nginx-cookbook-4-solutions-to-todays-top-application-delivery-problems/",
+    "title": "Insights from the 2024 NGINX Cookbook: 4 Solutions to Today’s Top Application Delivery Problems - NGINX",
+    "description": "The 2024 NGINX Cookbook tackles modern app delivery challenges, with over 100 recipes for installing, configuring, securing, and scaling NGINX.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72948,
+    "date": "2024-04-03T08:48:03",
+    "link": "https://www.nginx.com/blog/nginx-ingress-controller-with-prometheus-operator-for-out-of-the-box-metrics/",
+    "title": "F5 NGINX Ingress Controller with Prometheus-operator for Out-of-the-Box Metrics - NGINX",
+    "description": "NGINX Ingress Controller with Prometheus-operator ServiceMonitor CRD makes gathering metrics on deployments much easier and much faster using helm.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72950,
+    "date": "2024-03-29T07:30:24",
+    "link": "https://www.nginx.com/blog/announcing-nginx-gateway-fabric-release-1-2-0/",
+    "title": "Announcing NGINX Gateway Fabric Release 1.2.0 - NGINX",
+    "description": "Explore NGINX Gateway Fabric 1.2.0, now with enhanced security, URL rewriting, NGINX Plus support, and telemetry insights for optimal Kubernetes performance.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72934,
+    "date": "2024-03-13T12:15:38",
+    "link": "https://www.nginx.com/blog/our-design-vision-for-nginx-one-the-ultimate-data-plane-saas/",
+    "title": "Our Design Vision for NGINX One: The Ultimate Data Plane SaaS - NGINX",
+    "description": "NGINX One takes the core NGINX data plane software you're familiar with and enhances it with SaaS-based tools for observability, management, and security.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72925,
+    "date": "2024-02-28T11:15:14",
+    "link": "https://www.nginx.com/blog/the-ingress-controller-touchstone-for-securing-ai-ml-apps-in-kubernetes/",
+    "title": "The Ingress Controller: Touchstone for Securing AI/ML Apps in Kubernetes - NGINX",
+    "description": "Explore strategic advantages of securing AI/ML applications at the Ingress Controller layer in a Kubernetes environment.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72919,
+    "date": "2024-02-22T12:09:02",
+    "link": "https://www.nginx.com/blog/scale-secure-and-monitor-ai-ml-workloads-in-kubernetes-with-ingress-controllers/",
+    "title": "Scale, Secure, and Monitor AI/ML Workloads in Kubernetes with Ingress Controllers - NGINX",
+    "description": "Learn how to simplify and streamline model serving, experimentation, monitoring, and security for AI/ML workloads using Ingress controllers and F5 NGINX Connectivity Stack for Kubernetes.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72906,
+    "date": "2024-02-15T08:00:56",
+    "link": "https://www.nginx.com/blog/dynamic-a-b-kubernetes-multi-cluster-load-balancing-and-security-controls-with-nginx-plus/",
+    "title": "Dynamic A/B Kubernetes Multi-Cluster Load Balancing and Security Controls with NGINX Plus - NGINX",
+    "description": "NGINX Plus enables you to easily automate load balancing traffic to multiple Kubernetes active-active clusters. The NGINX Plus Split Clients module, key-value store, rate limits, and other security controls add enterprise-class traffic management controls to Kubernetes platform and DevOps engineers, providing real-time dynamic ratio load balancing for your Kubernetes apps and services.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72902,
+    "date": "2024-02-14T07:15:40",
+    "link": "https://www.nginx.com/blog/updating-nginx-for-the-vulnerabilities-in-the-http-3-module/",
+    "title": "Updating NGINX for the Vulnerabilities in the HTTP/3 Module - NGINX",
+    "description": ".....",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72903,
+    "date": "2024-02-14T07:15:34",
+    "link": "https://www.nginx.com/blog/nginx-continued-commitment-to-securing-users-in-action/",
+    "title": "NGINX’s Continued Commitment to Securing Users in Action - NGINX",
+    "description": "Learn how NGINX helps improve your security posture, even for experimental features, and why we decided to announce two recent CVEs.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72904,
+    "date": "2024-02-13T17:13:11",
+    "link": "https://www.nginx.com/blog/meetup-recap-nginxs-commitments-to-the-open-source-community/",
+    "title": "Meetup Recap: NGINX’s Commitments to the Open Source Community - NGINX",
+    "description": "At the NGINX meetup in San Jose, we reaffirmed our dedication to being an open source standard. To reach this goal, we’re making a set of commitments that positively impact our community.",
+    "author": "Meghan Williams"
+    },
+  {
+    "id": 72877,
+    "date": "2024-02-07T13:00:11",
+    "link": "https://www.nginx.com/blog/nginx-one-a-saas-solution-for-modern-application-management-and-delivery/",
+    "title": "NGINX One: A SaaS Solution for Modern Application Management and Delivery - NGINX",
+    "description": "NGINX One will soon be available “as-a-service,” with a single license and a unified management console for enterprise-wide security, availability, observability, and scalability.",
+    "author": "Meghan Williams"
+  },
+
+  {
+    "id": 72861,
+    "date": "2024-01-23T08:00:27",
+    "link": "https://www.nginx.com/blog/building-the-next-nginx-experience-designed-for-the-reality-of-modern-apps/",
+    "title": "Building the Next NGINX Experience, Designed for the Reality of Modern Apps - NGINX",
+    "description": "A brief look at what we’ve learned from our customers about their application delivery needs, and how it’s shaping our product portfolio.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72855,
+    "date": "2024-01-18T10:23:47",
+    "link": "https://www.nginx.com/blog/tutorial-configure-opentelemetry-for-your-applications-using-nginx/",
+    "title": "Tutorial: Configure OpenTelemetry for Your Applications Using NGINX - NGINX",
+    "description": "Use OpenTelemetry to achieve better visibility into the status and health of your NGINX servers so you can troubleshoot issues and improve web application performance.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72844,
+    "date": "2024-01-11T08:00:02",
+    "link": "https://www.nginx.com/blog/a-quick-guide-to-scaling-ai-ml-workloads-on-kubernetes/",
+    "title": "A Quick Guide to Scaling AI/ML Workloads on Kubernetes - NGINX",
+    "description": "Discover how to efficiently scale AI/ML models on Kubernetes and achieve high-performance adaptability across hybrid, multi-cloud environments.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72832,
+    "date": "2024-01-04T08:00:37",
+    "link": "https://www.nginx.com/blog/join-f5-nginx-at-appworld-2024/",
+    "title": "Join F5 NGINX at AppWorld 2024 - NGINX",
+    "description": "Learn about the many reasons to attend F5’s flagship event, which will include an exciting announcement about the NGINX product portfolio.",
+    "author": "Meghan Williams"
+    },
+
+  {
+    "id": 72823,
+    "date": "2023-12-19T11:33:42",
+    "link": "https://www.nginx.com/blog/nginx-plus-r31-released/",
+    "title": "Announcing NGINX Plus R31 - NGINX",
+    "description": "NGINX Plus R31 introduces native support for NGINX usage reporting, QUIC+HTTP/3 improvements and optimizations, a new directive in NGINX JavaScript to run content at periodic intervals, bug fixes, and much more.",
+    "author": "Meghan Williams"
+  },
+  {
+    "id": 72810,
+    "date": "2023-12-05T15:45:01",
+    "link": "https://www.nginx.com/blog/managing-your-nginx-configurations-with-github/",
+    "title": "Managing Your NGINX Configurations with GitHub - NGINX",
+    "description": "Learn how to manage versioning, rollback, and workflow of NGINX configurations using Instance Manager’s new integration with Git.",
+    "author": "Meghan Williams"
+    },
+  {
+    "id": 72804,
+    "date": "2023-11-30T13:15:23",
+    "link": "https://www.nginx.com/blog/watch-nginx-gateway-fabric-at-kubecon-north-america-2023/",
+    "title": "Watch: NGINX Gateway Fabric at KubeCon North America 2023 - NGINX",
+    "description": "This video stops by the NGINX booth at KubeCon, where we unveiled our implementation of the Kubernetes Gateway API.",
+    "author": "Meghan Williams"
+    },
+  {
+    "id": 72771,
+    "date": "2023-11-06T08:40:52",
+    "link": "https://www.nginx.com/blog/announcing-nginx-gateway-fabric-version-1-0/",
+    "title": "Announcing NGINX Gateway Fabric Version 1.0 - NGINX",
+    "description": "Learn about the first major release of NGINX Gateway Fabric, our Kubernetes Gateway API implementation built on the NGINX data plane, and how it enables extensibility, reduces complexity, and more.",
+    "author": "Danielle Jones"
+  },
+  {
+    "id": 72773,
+    "date": "2023-11-03T15:45:46",
+    "link": "https://www.nginx.com/blog/which-nginx-ingress-controllers-are-impacted-by-cve-2022-4886-cve-2023-5043-and-cve-2023-5044/",
+    "title": "Which NGINX Ingress Controllers Are Impacted by CVE-2022-4886, CVE-2023-5043, and CVE-2023-5044? - NGINX",
+    "description": "When new CVEs are reported, it’s easy to become confused by their applicability to a particular NGINX Ingress controller tool because there are multiple projects out there. This blog discusses the CVEs and how to distinguish between different Ingress controller projects to clear the confusion.",
+    "author": "Danielle Jones"
+  },
+  {
+    "id": 72768,
+    "date": "2023-11-02T08:00:17",
+    "link": "https://www.nginx.com/blog/how-nginx-gateway-fabric-implements-complex-routing-rules/",
+    "title": "How NGINX Gateway Fabric Implements Complex Routing Rules - NGINX",
+    "description": "Learn why we use NGINX JavaScript in our Kubernetes Gateway API implementation for HTTP request matching to solve challenges when routing rules become too complex for Go templates.",
+    "author": "Danielle Jones"
+  },
+  {
+    "id": 72755,
+    "date": "2023-10-31T08:00:29",
+    "link": "https://www.nginx.com/blog/configure-nginx-plus-for-saml-sso-with-microsoft-entra-id/",
+    "title": "Configure NGINX Plus for SAML SSO with Microsoft Entra ID - NGINX",
+    "description": "Learn how to configure NGINX Plus with Microsoft Entra ID to implement SAML single sign-on for your web applications.",
+    "author": "Danielle Jones"
+    },
+  {
+    "id": 72737,
+    "date": "2023-10-26T08:00:59",
+    "link": "https://www.nginx.com/blog/why-we-decided-to-start-fresh-with-our-nginx-gateway-fabric/",
+    "title": "Why We Decided to Start Fresh with Our NGINX Gateway Fabric - NGINX",
+    "description": "The Gateway API is an evolution of the Ingress resource that reimagines how connectivity is handled in Kubernetes. We discuss why we chose creating a new implementation, NGINX Gateway Fabric, rather than adding Gateway API specifications to NGINX Ingress Controller.",
+    "author": "Danielle Jones"
+    },
+  {
+    "id": 72733,
+    "date": "2023-10-23T09:40:34",
+    "link": "https://www.nginx.com/blog/5-reasons-to-try-the-kubernetes-gateway-api/",
+    "title": "5 Reasons to Try the Kubernetes Gateway API - NGINX",
+    "description": "The Gateway API provides a better alternative to the Kubernetes Ingress resource. We discuss reasons to try it and introduce NGINX Gateway Fabric, an open source tool that enables you to use the Gateway API with NGINX as a data plane.",
+    "author": "Danielle Jones"
+    },
+  {
+    "id": 72728,
+    "date": "2023-10-17T08:00:22",
+    "link": "https://www.nginx.com/blog/improve-azure-app-performance-and-security-with-nginx/",
+    "title": "Improve Azure App Performance and Security with NGINX - NGINX",
+    "description": "Discover the latest performance and security features added to NGINXaaS for Azure, a fully managed service powered by NGINX Plus. New capabilities include directives to secure upstream traffic with TLS, certificate rotation, HTTP/2 support, and more.",
+    "author": "Danielle Jones"
+    },
+  {
+    "id": 72711,
+    "date": "2023-10-12T13:10:20",
+    "link": "https://www.nginx.com/blog/extending-nginx-with-rust-an-alternative-to-c/",
+    "title": "Extending NGINX with Rust (an Alternative to C) - NGINX",
+    "description": "The popular programming language Rust can now be used to build and customize NGINX modules. Learn how to get started building Rust modules for NGINX.",
+    "author": "Danielle Jones"
+    },
+  {
+    "id": 72714,
+    "date": "2023-10-10T05:00:25",
+    "link": "https://www.nginx.com/blog/http-2-rapid-reset-attack-impacting-f5-nginx-products/",
+    "title": "HTTP/2 Rapid Reset Attack Impacting F5 NGINX Products - NGINX",
+    "description": "Update your NGINX configuration to mitigate a possible denial-of-service attack implemented on the server-side portion of the HTTP/2 specification.",
+    "author": "Danielle Jones"
+    },
+  {
+    "id": 72697,
+    "date": "2023-09-26T12:10:19",
+    "link": "https://www.nginx.com/blog/ssl-tls-certificate-rotation-without-restarts-in-nginx-open-source/",
+    "title": "SSL/TLS Certificate Rotation Without Restarts in NGINX Open Source - NGINX",
+    "description": "The shared dictionary function enables you set up NGINX without the need to restart when rotating SSL/TLS certificates.",
+    "author": "Danielle Jones"
+    },
+  {
+    "id": 72672,
+    "date": "2023-09-13T08:24:32",
+    "link": "https://www.nginx.com/blog/quic-http3-support-openssl-nginx/",
+    "title": "QUIC+HTTP/3 Support for OpenSSL with NGINX - NGINX",
+    "description": "We discuss how NGINX’s OpenSSL Compatibility Layer circumvents challenges with QUIC TLS interfaces that are not currently supported by OpenSSL.",
+    "author": "Danielle Jones"
+    }
+]
+}
