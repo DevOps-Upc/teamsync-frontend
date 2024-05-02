@@ -1,9 +1,10 @@
 import {createRouter, createWebHistory} from "vue-router"
 import HomeProyectComponent from "../proyect/pages/home-proyect.component.vue";
 import LoginCard from "../login/pages/login-card.vue";
+import RegisterCardComponent from "../register/pages/register-card.component.vue";
 let  id;
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path:`/id/home`,
@@ -14,6 +15,11 @@ const router = createRouter({
             path:'/login',
             name: 'login',
             component: LoginCard,
+        },
+        {
+            path:'/register',
+            name: 'register',
+            component: RegisterCardComponent,
         }
 
     ]

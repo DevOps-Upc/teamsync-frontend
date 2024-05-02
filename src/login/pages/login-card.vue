@@ -6,15 +6,26 @@ export default {
       nick: '',
       password: '',
       submitted: false,
-      loading: false
+      loading: false,
+      showlogin:true
+    }
+
+  },
+
+  methods: {
+    registro() {
+      this.showlogin=false;
+      // Redirige a la ruta '/otro-componente'
+      this.$router.push('/register');
     }
   }
+
 }
 </script>
 
 <template>
   <br /><br />
-  <div class="centered-container">
+  <div v-if="showlogin" class="centered-container">
     <pv-card class="p-fluid" style=" width: 500px; height: 500px; background-color: #C2CEFF; padding: 20px; border-radius: 20px; font-family: 'Montserrat', sans-serif">
       <template #title>
         <span class="paragraph font-bold" style="color: #3B2AD8; font-size: 40px"> Login </span>
@@ -62,7 +73,9 @@ export default {
         <span class="paragraph"> Forgot Password </span>
         <br/>
         <br/>
-        <span class="paragraph"> Do not have an account? Sign Up </span>
+
+        <pv-button :label="('Do not have an account? Sign Up')" style="background-color: #C2CEFF; color: black; width: 60%"  :disabled="loading" @click="registro">
+        </pv-button>
 
       </template>
     </pv-card>
