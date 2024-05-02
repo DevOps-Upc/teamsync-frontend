@@ -11,7 +11,7 @@ export default {
         {label:'Home',to:'/id/home'},
         {label:'Task',to:'/id/tasks'},
         {label:'Members',to:'/id/members'},
-        {label:'Request Expert',to:'/id/request_experts'},
+        {label:'Request Expert',to:'/id/experts'},
         {label:'Calendar',to:'/id/calendar'}
 
       ]
