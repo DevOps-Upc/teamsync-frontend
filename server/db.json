@@ -25,7 +25,7 @@
       "name": "Tarea 2",
       "state": 1,
       "date": "",
-      "id_integrate": 0,
+      "id_integrate": null,
       "id_project": 1
     },
     {
@@ -33,7 +33,7 @@
       "name": "Tarea 3",
       "state": 1,
       "date": "",
-      "id_integrate": 0,
+      "id_integrate": null,
       "id_project": 0
     },
     {
@@ -71,14 +71,12 @@
       "id_project": 0,
       "id_profile": 0,
       "content": "Mejorar el encabezado ghfhgfhfghgfhfg hfg h fgh gf hgf h gf h fg h fg h fg hfg h fg h fg h fg h fgh fg h gf h fg h fg h f h fg h fgh fg h fg h f fghgfhgfhgf hgf hfg h gfh fgh gfh gfh gfh g hfg h g fh f h  gfhg f hgfhgh hgf h g h gf hfg h f gh gf h fg h gf h gf hg fh  g hf h f hf gh fgh fgh  gh f hf g hfgh"
-
     },
     {
       "id": 1,
       "id_project": 0,
       "id_profile": 1,
       "content": "Cambiar el tema central del informe"
-
     }
   ],
   "files": [
@@ -87,28 +85,24 @@
       "name": "Archivo 1",
       "type": "pdf",
       "id_project": 0
-
     },
     {
       "id": 1,
       "name": "Archivo 2",
       "type": "pdf",
       "id_project": 0
-
     },
     {
       "id": 2,
       "name": "Archivo 3",
       "type": "pdf",
       "id_project": 0
-
     },
     {
       "id": 3,
       "name": "Archivo 4",
       "type": "pdf",
       "id_project": 1
-
     },
     {
       "id": 4,
@@ -123,6 +117,4 @@
       "id_project": 0
     }
   ]
-
-
 }

@@ -18,6 +18,9 @@ export default {
   data(){
     return{
       submitted:false,
+      optionIntegrate: {},
+      optionDate:new Date,
+
       integrates:[]
     }
   },created() {
@@ -27,6 +30,7 @@ export default {
         response => {
           this.integrates= response.data;
           console.log(this.integrates)
+
         }
     )
   },
@@ -36,10 +40,13 @@ export default {
     },
     onSave(){
       this.submitted=true;
+      this.task.id_integrate = this.optionIntegrate ? this.optionIntegrate.id : null;
+      this.task.date=this.optionDate.toUTCString().toString()
+
       this.$emit('save',this.task)
     }
-
   }
+
 }
 </script>
 
@@ -60,8 +67,8 @@ export default {
     <div class="flex align-items-center mt-3">
       <label for="date limited" class="mr-4">Integrate</label>
       <span class="p-float-label">
-        <pv-dropdown v-model="task.id_integrate" :options="integrates"
-        optionLabel="id" placeholder="Select a Integrate"/>
+        <pv-dropdown v-model="this.optionIntegrate" :options="integrates"
+        optionLabel="name" placeholder="Select a Integrate"/>
 
         <br><small v-if="submitted && !task.date" class="p-error">Date is required</small>
       </span>
@@ -70,7 +77,7 @@ export default {
     <div class="flex align-items-center mt-3">
       <label for="date limited" class="mr-4">Date Limited</label>
       <span class="p-float-label">
-        <pv-input-calendar v-model="task.date" showIcon iconDisplay="input" inputId="icondisplay"></pv-input-calendar>
+        <pv-input-calendar v-model="optionDate" showIcon iconDisplay="input" inputId="icondisplay"></pv-input-calendar>
         <br><small v-if="submitted && !task.date" class="p-error">Date is required</small>
       </span>
     </div>

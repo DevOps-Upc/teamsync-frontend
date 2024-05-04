@@ -3,6 +3,7 @@
 
 import {ProyectApiService} from "../services/proyect-api.service.js";
 import ProjectTaskAddOrEdit from "../components/project-task-add-or-edit.component.vue";
+import {Task} from "../model/Task.entity.js";
 
 
 export default {
@@ -25,9 +26,9 @@ export default {
     this.proyectService.getAllTask(0)
         .then(response => {
           response.data.map(x=>{
-            if(x.state===0){
+            if(x.id_integrate===null){
               this.tasksNoAssigned.push(x)
-            }else if(x.state === 1){
+            }else{
               this.tasksAssigned.push(x)
             }
           })
@@ -35,17 +36,55 @@ export default {
 
   },
   methods:{
+
+    notifySuccessfulAction(message) {
+      this.$toast.add({severity: "success", summary: "Success", detail: message, life: 3000,});
+    },
+
     onAddOrUpdateTaskCancel(){
       this.taskDialog=false;
       this.submitted=false;
     },
     onSaveTask(){
       this.submitted=true;
+      if(this.task.id){
 
 
-
+      }else{
+        this.createTask();
+      }
       this.taskDialog=false;
       this.task={};
+
+    },
+    createTask(){
+      this.task.id=0;
+      //Tarea no finalizada
+      this.task.state=0;
+      //Tarea relazionada con el projecto visto actualmente
+      this.task.id_project=0;
+      console.log(this.task.date)
+      console.log(this.task)
+
+      this.task= Task.fromDisplayTask(this.task);
+      console.log(this.task);
+
+      if (this.task.id_integrate === undefined) {
+        this.task.id_integrate = null;
+      }
+      this.proyectService.createTask(this.task)
+          .then(response=>{
+            this.task= Task.toDisplayableTask(response.data);
+            console.log("Despues del servicio")
+            console.log(this.task)
+            if(this.task.id_integrate === null){
+              this.tasksNoAssigned.push(this.task);
+            }else {
+              this.tasksAssigned.push(this.task)
+            }
+            this.notifySuccessfulAction("Task Create")
+          })
+
 
     },
     openDialog(){
