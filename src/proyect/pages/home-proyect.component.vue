@@ -117,6 +117,7 @@ export default {
   border-radius: 16px;
   padding: 15px;
   margin: 10px;
+  overflow: auto;
 
 }
 .card{

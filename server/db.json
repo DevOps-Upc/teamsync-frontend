@@ -16,13 +16,15 @@
       "id": 0,
       "name": "Tarea 1",
       "state": 1,
-      "id_integrate": null,
+      "date": "",
+      "id_integrate": 0,
       "id_project": 0
     },
     {
       "id": 1,
       "name": "Tarea 2",
       "state": 1,
+      "date": "",
       "id_integrate": 0,
       "id_project": 1
     },
@@ -30,19 +32,38 @@
       "id": 2,
       "name": "Tarea 3",
       "state": 1,
-      "id_integrate": null,
+      "date": "",
+      "id_integrate": 0,
       "id_project": 0
     },
     {
       "id": 3,
       "name": "Tarea 4",
       "state": 1,
+      "date": "",
+      "id_integrate": 0,
+      "id_project": 0
+    },
+    {
+      "id": 4,
+      "name": "Tarea 5",
+      "state": 0,
+      "date": "",
       "id_integrate": null,
       "id_project": 0
     }
   ],
   "integrates": [
-    {}
+    {
+      "id": 0,
+      "id_project": 0,
+      "name": "Brayan"
+    },
+    {
+      "id": 1,
+      "id_project": 0,
+      "name": "Alex"
+    }
   ],
   "comments": [
     {
@@ -84,10 +105,22 @@
     },
     {
       "id": 3,
-      "name": "Archivo 1",
+      "name": "Archivo 4",
       "type": "pdf",
       "id_project": 1
 
+    },
+    {
+      "id": 4,
+      "name": "Archivo 5",
+      "type": "pdf",
+      "id_project": 0
+    },
+    {
+      "id": 5,
+      "name": "Archivo 6",
+      "type": "pdf",
+      "id_project": 0
     }
   ]
 

@@ -10,7 +10,14 @@ export class ProyectApiService {
         return http.get(`/comments?id_project=${id}`);
     }
 
+    getAllIntegrate(id){
+        return http.get(`/integrates?id_project=${id}`);
+    }
+
     getProject(id){
         return http.get(`/projects/${id}`);
+    }
+    createTask(taskResource){
+        return http.post('/tasks',taskResource)
     }
 }
