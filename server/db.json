@@ -116,5 +116,55 @@
       "type": "pdf",
       "id_project": 0
     }
+  ],
+  "experts": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "title": "Web App Teacher",
+      "bio": "John is a web app teacher at a local college. He has been teaching for 10 years and has a passion for helping students learn how to build web apps.",
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/043e/live/4414a8b0-0882-11ef-b880-9be550bc39fc.jpg",
+      "link": "john-doe.html"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "title": "Web App Developer",
+      "bio": "Jane is a web app developer at a local startup. She has been developing web apps for 5 years and has a passion for building great user experiences.",
+      "image": "https://images.unsplash.com/photo-1714383625340-893175947b32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "jane-smith.html"
+    },
+    {
+      "id": "3",
+      "name": "Bob Johnson",
+      "title": "Web App Designer",
+      "bio": "Bob is a web app designer at a local design agency. He has been designing web apps for 3 years and has a passion for creating beautiful interfaces.",
+      "image": "bob-johnson.jpg",
+      "link": "bob-johnson.html"
+    },
+    {
+      "id": "4",
+      "name": "Sara Williams",
+      "title": "History Teacher",
+      "bio": "Sara is a history teacher at a local high school. She has been teaching for 15 years and has a passion for helping students learn about the past.",
+      "image": "sara-williams.jpg",
+      "link": "sara-williams.html"
+    },
+    {
+      "id": "5",
+      "name": "Mike Brown",
+      "title": "Math Teacher",
+      "bio": "Mike is a math teacher at a local middle school. He has been teaching for 20 years and has a passion for helping students learn how to solve problems.",
+      "image": "mike-brown.jpg",
+      "link": "mike-brown.html"
+    },
+    {
+      "id": "6",
+      "name": "Emily Jones",
+      "title": "Science Teacher",
+      "bio": "Emily is a science teacher at a local elementary school. She has been teaching for 5 years and has a passion for helping students learn about the world around them.",
+      "image": "emily-jones.jpg",
+      "link": "emily-jones.html"
+    }
   ]
 }
