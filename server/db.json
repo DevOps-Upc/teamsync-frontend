@@ -1,19 +1,19 @@
 {
   "projects": [
     {
-      "id": 0,
+      "id": "0",
       "name": "Proyecto 1",
       "picture": ""
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Proyecto 2",
       "picture": ""
     }
   ],
   "tasks": [
     {
-      "id": 0,
+      "id": "0",
       "name": "Tarea 1",
       "state": 1,
       "date": "",
@@ -21,7 +21,7 @@
       "id_project": 0
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Tarea 2",
       "state": 1,
       "date": "",
@@ -29,7 +29,7 @@
       "id_project": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Tarea 3",
       "state": 1,
       "date": "",
@@ -37,7 +37,7 @@
       "id_project": 0
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Tarea 4",
       "state": 1,
       "date": "",
@@ -45,35 +45,59 @@
       "id_project": 0
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Tarea 5",
       "state": 0,
       "date": "",
       "id_integrate": null,
       "id_project": 0
+    },
+    {
+      "id": 0,
+      "name": "Tarea 3",
+      "state": 0,
+      "date": "Thu, 09 May 2024 18:24:46 GMT",
+      "id_integrate": "0",
+      "id_project": 0
+    },
+    {
+      "id": 0,
+      "name": "Tarea 4",
+      "state": 0,
+      "date": "Thu, 09 May 2024 18:24:46 GMT",
+      "id_integrate": "0",
+      "id_project": 0
+    },
+    {
+      "id": 0,
+      "name": "ppppppppppppppppp",
+      "state": 0,
+      "date": "Thu, 09 May 2024 18:24:46 GMT",
+      "id_integrate": "0",
+      "id_project": 0
     }
   ],
   "integrates": [
     {
-      "id": 0,
+      "id": "0",
       "id_project": 0,
       "name": "Brayan"
     },
     {
-      "id": 1,
+      "id": "1",
       "id_project": 0,
       "name": "Alex"
     }
   ],
   "comments": [
     {
-      "id": 0,
+      "id": "1",
       "id_project": 0,
       "id_profile": 0,
       "content": "Mejorar el encabezado ghfhgfhfghgfhfg hfg h fgh gf hgf h gf h fg h fg h fg hfg h fg h fg h fg h fgh fg h gf h fg h fg h f h fg h fgh fg h fg h f fghgfhgfhgf hgf hfg h gfh fgh gfh gfh gfh g hfg h g fh f h  gfhg f hgfhgh hgf h g h gf hfg h f gh gf h fg h gf h gf hg fh  g hf h f hf gh fgh fgh  gh f hf g hfgh"
     },
     {
-      "id": 1,
+      "id": "1",
       "id_project": 0,
       "id_profile": 1,
       "content": "Cambiar el tema central del informe"
@@ -81,37 +105,37 @@
   ],
   "files": [
     {
-      "id": 0,
+      "id": "0",
       "name": "Archivo 1",
       "type": "pdf",
       "id_project": 0
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Archivo 2",
       "type": "pdf",
       "id_project": 0
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Archivo 3",
       "type": "pdf",
       "id_project": 0
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Archivo 4",
       "type": "pdf",
       "id_project": 1
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Archivo 5",
       "type": "pdf",
       "id_project": 0
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Archivo 6",
       "type": "pdf",
       "id_project": 0
@@ -119,7 +143,7 @@
   ],
   "experts": [
     {
-      "id": "1",
+      "id": "0",
       "name": "John Doe",
       "title": "Web App Teacher",
       "bio": "John is a web app teacher at a local college. He has been teaching for 10 years and has a passion for helping students learn how to build web apps.",
@@ -127,7 +151,7 @@
       "link": "john-doe.html"
     },
     {
-      "id": "2",
+      "id": "1",
       "name": "Jane Smith",
       "title": "Web App Developer",
       "bio": "Jane is a web app developer at a local startup. She has been developing web apps for 5 years and has a passion for building great user experiences.",
@@ -135,7 +159,7 @@
       "link": "jane-smith.html"
     },
     {
-      "id": "3",
+      "id": "2",
       "name": "Bob Johnson",
       "title": "Web App Designer",
       "bio": "Bob is a web app designer at a local design agency. He has been designing web apps for 3 years and has a passion for creating beautiful interfaces.",
@@ -143,7 +167,7 @@
       "link": "bob-johnson.html"
     },
     {
-      "id": "4",
+      "id": "3",
       "name": "Sara Williams",
       "title": "History Teacher",
       "bio": "Sara is a history teacher at a local high school. She has been teaching for 15 years and has a passion for helping students learn about the past.",
@@ -151,7 +175,7 @@
       "link": "sara-williams.html"
     },
     {
-      "id": "5",
+      "id": "4",
       "name": "Mike Brown",
       "title": "Math Teacher",
       "bio": "Mike is a math teacher at a local middle school. He has been teaching for 20 years and has a passion for helping students learn how to solve problems.",
@@ -159,7 +183,7 @@
       "link": "mike-brown.html"
     },
     {
-      "id": "6",
+      "id": "5",
       "name": "Emily Jones",
       "title": "Science Teacher",
       "bio": "Emily is a science teacher at a local elementary school. She has been teaching for 5 years and has a passion for helping students learn about the world around them.",
