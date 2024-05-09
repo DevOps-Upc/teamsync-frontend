@@ -64,27 +64,34 @@ export default {
       <div class="grip">
         <div class="col">
 
-          <div class="DivHome">
+          <div class="p-2 m-2 border-round-xl mt-5 " id="HomeDiv">
+
             <h2>Assigned Tasks</h2>
-            <div class="xl:grid sm:flex">
-              <div class="xl:col-4 sm:flex-column" v-for="task in tasks" :key="task.id">
+
+            <div class="grid overflow-auto xl: h-13rem " >
+              <div class="xl:col-12 md:col-12 sm:col-12"  v-for="task in tasks" :key="task.id" >
                 <div class="card1">
                   <img src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png">
                   <h3>{{task.name}}</h3>
                 </div>
-
               </div>
             </div>
           </div>
 
+
+
         </div>
         <div class="col">
 
-          <div class="DivHome">
-            <h2>Files</h2>
-            <div class="xl:grid sm:flex">
-              <div class="xl:col-4 sm:flex-column" v-for="file in files" :key="file.id">
-                <div class="card1" >
+
+
+          <div class="p-2 m-2 border-round-xl mt-5 " id="HomeDiv">
+
+            <h2>Assigned Tasks</h2>
+
+            <div class="grid overflow-auto xl: h-13rem " >
+              <div class="xl:col-6 md:col-12 sm:col-12"  v-for="file in files" :key="file.id" >
+                <div class="card1">
                   <h3>{{file.name}}</h3>
                 </div>
               </div>
@@ -111,6 +118,9 @@ export default {
 </template>
 
 <style scoped>
+#HomeDiv{
+  background-color: #c2ceff;
+}
 
 .DivHome {
   background-color: #c2ceff;
@@ -131,11 +141,15 @@ export default {
 }
 .card1{
   display:flex;
+  justify-content:center;
+
   border-radius:16px;
+
   align-items:center;
   padding:5px;
   background-color: white;
-  margin-top:10px;
+  margin: 10px;
+
   >img{
     height:51px;
     width:51px;
