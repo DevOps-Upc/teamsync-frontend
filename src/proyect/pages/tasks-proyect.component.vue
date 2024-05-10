@@ -113,8 +113,14 @@ export default {
       <div class="grid overflow-auto xl: h-13rem " >
         <div class="xl:col-4 md:col-6 sm:col-12"  v-for="item in tasksAssigned" :key="item.id" >
           <div class="card1">
-            <img src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png">
-            <h3>{{item.name}}</h3>
+            <div>
+              <img src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png">
+              <h3>{{item.name}}</h3>
+            </div>
+            <pv-button text>
+              <i class="pi pi-pencil" style="font-size:2rem; color:black;"></i>
+            </pv-button>
+
           </div>
         </div>
       </div>
@@ -128,7 +134,14 @@ export default {
       <div class="grid overflow-auto xl: h-13rem " >
         <div class="xl:col-4 md:col-6 sm:col-12"  v-for="item in tasksNoAssigned" :key="item.id" >
           <div class="card1">
-            <h3>{{item.name}}</h3>
+            <div>
+              <img src="https://citylimits.org/wp-content/uploads/2023/02/img.png">
+              <h3>{{item.name}}</h3>
+            </div>
+            <pv-button text>
+              <i class="pi pi-pencil" style="font-size:2rem; color:black;"></i>
+            </pv-button>
+
           </div>
         </div>
       </div>
@@ -167,16 +180,19 @@ export default {
 }
 .card1{
   display:flex;
-  justify-content:center;
+  justify-content: space-between;
 
   border-radius:16px;
 
-  align-items:center;
   padding:5px;
   background-color: white;
   margin: 10px;
 
-  >img{
+  >div{
+    display:flex;
+  }
+
+  >div>img{
     height:51px;
     width:51px;
     border-radius:50%;
