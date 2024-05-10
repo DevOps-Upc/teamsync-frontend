@@ -113,11 +113,11 @@ export default {
       <div class="grid overflow-auto xl: h-13rem " >
         <div class="xl:col-4 md:col-6 sm:col-12"  v-for="item in tasksAssigned" :key="item.id" >
           <div class="card1">
+            <img src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png">
             <h3>{{item.name}}</h3>
           </div>
         </div>
       </div>
-
     </div>
 
 
