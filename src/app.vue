@@ -1,9 +1,10 @@
 <script>
 import ToolbarComponent from "./public/component/toolbarStudent.component.vue";
+import SidebarStudentComponent from "./public/component/sidebarStudent.component.vue";
 export default {
   name: 'app',
   title: 'DevSoft TeamSync',
-  components: {ToolbarComponent},
+  components: {SidebarStudentComponent, ToolbarComponent},
   data(){
     return{
 
@@ -16,16 +17,29 @@ export default {
 </script>
 
 <template>
-  <ToolbarComponent></ToolbarComponent>
-  <div class="mt-8 md:mt-7 sm:mt-8 xl:mt-7">
-    <router-view></router-view>
+  <div class="grid">
+    <div class="col-1" >
+      <sidebar-student-component></sidebar-student-component>
+    </div>
+
+    <div class="col-11">
+      <router-view ></router-view>
+    </div>
+
   </div>
+
+
+
+
+
+
+
+
 
 </template>
 
 <style scoped>
-.container{
-  padding-top:61.45px;
-}
+
+
 
 </style>
