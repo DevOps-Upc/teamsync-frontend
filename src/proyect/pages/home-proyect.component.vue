@@ -11,12 +11,14 @@ export default {
       tasks:[],
       comments:[]
 
+
     }
   },
   created() {
+     let projectId = Number(this.$route.params.id);
     //Servico de Proyecto q selecciono (Uso el 0 proyect)
     this.proyectService = new ProyectApiService();
-    this.proyectService.getProject(0)
+    this.proyectService.getProject(projectId)
         .then(response =>{
           this.proyect =response.data;
           console.log("datos")
@@ -24,20 +26,22 @@ export default {
         })
 
     //Servicio de Files a mostrar
-    this.proyectService.getAllFiles(0)
+    this.proyectService.getAllFiles(projectId)
         .then(response =>{
           this.files =response.data;
         })
 
     //Servicio de tasks a mostrar
-    this.proyectService.getAllTask(0)
+    this.proyectService.getAllTask(projectId)
         .then(response => {
           this.tasks= response.data;
         })
     //Servicio de Comments a mostrar
-    this.proyectService.getAllComments(0)
+    this.proyectService.getAllComments(projectId)
         .then(response =>{
           this.comments= response.data;
+          console.log("Comentarios")
+          console.log(this.comments)
         })
     this.initFilters();
 

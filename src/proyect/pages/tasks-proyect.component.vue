@@ -21,9 +21,11 @@ export default {
 
     }
   },created() {
+
+    let projectId = Number(this.$route.params.id);
     this.proyectService = new ProyectApiService();
 
-    this.proyectService.getAllTask(0)
+    this.proyectService.getAllTask(projectId)
         .then(response => {
           response.data.map(x=>{
             if(x.id_integrate===null){

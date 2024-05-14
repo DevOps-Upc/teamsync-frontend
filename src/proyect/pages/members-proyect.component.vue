@@ -1,23 +1,29 @@
 <script>
 import {ProyectApiService} from "../services/proyect-api.service.js";
+import ProjectMembersAddOrEdit from "../components/project-members-add-or-edit.component.vue";
+
 
 
 
 export default {
   name: "members-proyect.component",
   title: "toolBarStudent",
-  components:{},
+  components:{ProjectMembersAddOrEdit},
   data(){
     return{
-      integratesOfProyect:[]
+      integratesOfProyect:[],
+      integrate:{},
+      submitted:false,
+      integrateDialog:false
 
     }
 
   },
   created() {
+    let projectId = Number(this.$route.params.id);
     this.proyectService = new ProyectApiService();
 
-    this.proyectService.getAllIntegrate(0).then(
+    this.proyectService.getAllIntegrate(projectId).then(
         response => {
           this.integratesOfProyect = response.data
           console.log(this.integratesOfProyect)
@@ -25,7 +31,20 @@ export default {
         }
     )
   },
-  methods(){
+  methods:{
+    openDialog(){
+      this.integrate={};
+      this.submitted=false;
+      this.integrateDialog=true;
+    },
+    onAddOrUpdateIntegrateCancel(){
+      this.integrateDialog=false;
+      this.submitted=false;
+
+    },
+    onSaveIntegrate(){
+
+    }
 
   }
 }
@@ -56,8 +75,16 @@ export default {
   </div>
 
   <div class="flex p-2 m-3">
-    <pv-button label="Invite" style="background-color: #058339;"/>
+    <pv-button label="Invite" style="background-color: #058339;" @click="openDialog"/>
   </div>
+
+  <project-members-add-or-edit
+      :integrate = "integrate"
+      v-bind:visible="integrateDialog"
+      v-on:cancel="onAddOrUpdateIntegrateCancel"
+      v-on:save="onSaveIntegrate"
+
+  />
 
 
 
