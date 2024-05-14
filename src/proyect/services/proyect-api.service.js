@@ -17,6 +17,11 @@ export class ProyectApiService {
     getProject(id){
         return http.get(`/projects/${id}`);
     }
+
+    getAllProjectsByIdUser(id){
+        return http.get(`/projects?id_user=${id}`)
+    }
+
     createTask(taskResource){
         return http.post('/tasks',taskResource)
     }
