@@ -28,6 +28,9 @@ import Dialog from "primevue/dialog";
 import InputText from "primevue/inputtext";
 import Calendar from 'primevue/calendar';
 import Dropdown from 'primevue/dropdown';
+import Splitter from 'primevue/splitter';
+import SplitterPanel from 'primevue/splitterpanel';
+
 
 createApp(App)
     .use(router)
@@ -35,6 +38,8 @@ createApp(App)
     .use(DialogService)
     .use(ConfirmationService)
     .use(ToastService)
+    .component('pv-splitter',Splitter)
+    .component('pv-splitter-panel',SplitterPanel)
     .component('pv-card',Card)
     .component('pv-toolbar',Toolbar)
     .component('pv-button',Button)

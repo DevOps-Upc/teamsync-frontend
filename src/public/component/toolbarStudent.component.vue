@@ -7,19 +7,20 @@ export default {
   components:{},
   data(){
     return{
-      item:[
-        {label:'Home',to:'/id/home'},
-        {label:'Task',to:'/id/tasks'},
-        {label:'Members',to:'/id/members'},
-        {label:'Request Expert',to:'/id/experts'},
-        {label:'Calendar',to:'/id/calendar'}
 
+      item:[
+        {label:'Home',to:`home`},
+        {label:'Task',to:`tasks`},
+        {label:'Members',to:`members`},
+        {label:'Request Expert',to:`experts`},
+        {label:'Calendar',to:`calendar`}
       ]
 
     }
 
   },
   created() {
+
   },
   methods(){
 
@@ -28,6 +29,7 @@ export default {
 </script>
 
 <template>
+
   <pv-toolbar class="toolbarStudent">
     <template #center>
       <div class="xl:flex-column sm:flex-column text-xs">
