@@ -24,6 +24,9 @@ import DialogService        from "primevue/dialogservice";
 import Card from "primevue/card";
 import Toolbar from "primevue/toolbar";
 import Button from 'primevue/button';
+import Dialog from "primevue/dialog";
+import InputText from "primevue/inputtext";
+
 
 createApp(App)
     .use(router)
@@ -34,4 +37,6 @@ createApp(App)
     .component('pv-card',Card)
     .component('pv-toolbar',Toolbar)
     .component('pv-button',Button)
+    .component('pv-dialog',Dialog)
+    .component('pv-input-text',InputText)
     .mount('#app')

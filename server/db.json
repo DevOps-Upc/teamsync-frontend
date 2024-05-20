@@ -96,6 +96,7 @@
       "name": "John Doe",
       "title": "Web App Teacher",
       "bio": "John is a web app teacher at a local college. He has been teaching for 10 years and has a passion for helping students learn how to build web apps.",
+      "experience": "10 years",
       "image": "https://ichef.bbci.co.uk/news/1024/branded_news/043e/live/4414a8b0-0882-11ef-b880-9be550bc39fc.jpg",
       "link": "john-doe.html"
     },
@@ -104,6 +105,7 @@
       "name": "Jane Smith",
       "title": "Web App Developer",
       "bio": "Jane is a web app developer at a local startup. She has been developing web apps for 5 years and has a passion for building great user experiences.",
+      "experience": "5 years",
       "image": "https://images.unsplash.com/photo-1714383625340-893175947b32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "jane-smith.html"
     },
@@ -112,7 +114,8 @@
       "name": "Bob Johnson",
       "title": "Web App Designer",
       "bio": "Bob is a web app designer at a local design agency. He has been designing web apps for 3 years and has a passion for creating beautiful interfaces.",
-      "image": "bob-johnson.jpg",
+      "experience": "3 years",
+      "image": "https://images.unsplash.com/photo-1714383625340-893175947b32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "bob-johnson.html"
     },
     {
@@ -120,7 +123,8 @@
       "name": "Sara Williams",
       "title": "History Teacher",
       "bio": "Sara is a history teacher at a local high school. She has been teaching for 15 years and has a passion for helping students learn about the past.",
-      "image": "sara-williams.jpg",
+      "experience": "15 years",
+      "image": "https://images.unsplash.com/photo-1714383625340-893175947b32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "sara-williams.html"
     },
     {
@@ -128,7 +132,8 @@
       "name": "Mike Brown",
       "title": "Math Teacher",
       "bio": "Mike is a math teacher at a local middle school. He has been teaching for 20 years and has a passion for helping students learn how to solve problems.",
-      "image": "mike-brown.jpg",
+      "experience": "20 years",
+      "image": "https://images.unsplash.com/photo-1714383625340-893175947b32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "mike-brown.html"
     },
     {
@@ -136,8 +141,91 @@
       "name": "Emily Jones",
       "title": "Science Teacher",
       "bio": "Emily is a science teacher at a local elementary school. She has been teaching for 5 years and has a passion for helping students learn about the world around them.",
-      "image": "emily-jones.jpg",
+      "experience": "5 years",
+      "image": "https://images.unsplash.com/photo-1714383625340-893175947b32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "emily-jones.html"
+    },
+    {
+      "id": "7",
+      "name": "Laura White",
+      "title": "Data Scientist",
+      "bio": "Laura is a data scientist at a tech company. She has been working with data for 8 years and loves to uncover insights from data.",
+      "experience": "8 years",
+      "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "laura-white.html"
+    },
+    {
+      "id": "8",
+      "name": "David Green",
+      "title": "AI Researcher",
+      "bio": "David is an AI researcher at a university. He has been researching AI for 10 years and is passionate about advancing the field.",
+      "experience": "10 years",
+      "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "david-green.html"
+    },
+    {
+      "id": "9",
+      "name": "Alice Brown",
+      "title": "Cybersecurity Expert",
+      "bio": "Alice is a cybersecurity expert at a financial firm. She has been protecting data for 12 years and enjoys teaching others about security.",
+      "experience": "12 years",
+      "image": "https://images.unsplash.com/photo-1536620799021-1c1f5df1141b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "alice-brown.html"
+    },
+    {
+      "id": "10",
+      "name": "James Miller",
+      "title": "Network Engineer",
+      "bio": "James is a network engineer at a large corporation. He has been designing and maintaining networks for 15 years.",
+      "experience": "15 years",
+      "image": "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "james-miller.html"
+    },
+    {
+      "id": "11",
+      "name": "Karen Wilson",
+      "title": "UI/UX Designer",
+      "bio": "Karen is a UI/UX designer at a digital agency. She has been creating user-friendly designs for 7 years.",
+      "experience": "7 years",
+      "image": "https://images.unsplash.com/photo-1502767089025-6572583495fe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "karen-wilson.html"
+    },
+    {
+      "id": "12",
+      "name": "Charles Clark",
+      "title": "Cloud Architect",
+      "bio": "Charles is a cloud architect at a multinational company. He has been working with cloud technologies for 10 years.",
+      "experience": "10 years",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "charles-clark.html"
+    },
+    {
+      "id": "13",
+      "name": "Linda Martinez",
+      "title": "DevOps Engineer",
+      "bio": "Linda is a DevOps engineer at a tech startup. She has been streamlining development processes for 6 years.",
+      "experience": "6 years",
+      "image": "https://images.unsplash.com/photo-1515162305284-2c63a7e3a7e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "linda-martinez.html"
+    },
+    {
+      "id": "14",
+      "name": "Paul Robinson",
+      "title": "Mobile App Developer",
+      "bio": "Paul is a mobile app developer at an app development company. He has been creating mobile apps for 5 years.",
+      "experience": "5 years",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "paul-robinson.html"
+    },
+    {
+      "id": "15",
+      "name": "Rachel Davis",
+      "title": "Product Manager",
+      "bio": "Rachel is a product manager at a tech company. She has been overseeing product development for 9 years.",
+      "experience": "9 years",
+      "image": "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "rachel-davis.html"
     }
   ]
+
 }
