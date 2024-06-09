@@ -54,10 +54,7 @@ export default {
   background-color: #6161FF;
   height: 100vh;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
+
 
   > img {
     border-radius: 100%;

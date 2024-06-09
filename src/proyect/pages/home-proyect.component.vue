@@ -89,9 +89,6 @@ export default {
 
         </div>
         <div class="col">
-
-
-
           <div class="p-2 m-2 border-round-xl mt-5 " id="HomeDiv">
 
             <h2>Assigned Tasks</h2>
