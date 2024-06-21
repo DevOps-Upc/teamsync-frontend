@@ -8,14 +8,12 @@ export default {
     return{
       items:[
         {icon:"pi pi-home", to:'/home'},
-        {icon:"pi pi-briefcase", to:'/professionals'},
-        {icon:"pi pi-book", to:'/librery'},
+        {icon:"pi pi-briefcase", to:'/experts'},
+        {icon:"pi pi-book", to:'/library'},
         {icon:"pi pi-bell", to:'/notifications'},
-        {icon:"pi pi-sign-out", to:''}
+        {icon:"pi pi-sign-out", to:'/logout'}
       ]
-
     }
-
   },
   created() {
 
@@ -39,9 +37,6 @@ export default {
           <i :class="item.icon" id="icon" ></i>
         </pv-button>
       </router-link>
-
-
-    
   </div>
 
 </template>
@@ -52,10 +47,8 @@ export default {
   text-align: center;
   width: 100px;
   background-color: #6161FF;
-  height: 100vh;
-
-
-
+  min-height: 100vh;
+  height: 100%;
   > img {
     border-radius: 100%;
     object-fit: cover;
@@ -77,7 +70,5 @@ export default {
 #icon{
   font-size:2rem;
   color:black;
-
 }
-
 </style>

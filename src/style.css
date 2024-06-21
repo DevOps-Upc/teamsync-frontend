@@ -6,3 +6,15 @@ h1 {
 body{
     font-family: "Montserrat",serif;
 }
+.align-center{
+    text-align: center;
+}
+.p-inputtext.p-invalid{
+    border-color: #ff0000;
+    background-color: #ffd4d4;
+}
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}

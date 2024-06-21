@@ -6,40 +6,45 @@ export default {
   title: 'DevSoft TeamSync',
   components: {SidebarStudentComponent, ToolbarComponent},
   data(){
-    return{
-
+    return {
+      user: null,
     }
   },
-  methods(){
-
+  methods: {
+    login(user){
+      this.user = user;
+      localStorage.setItem('user', JSON.stringify(user));
+      this.$router.push('/home')
+    },
+    logout(){
+      localStorage.clear();
+      this.$router.push('/login');
+    }
+  },
+  created(){
+    this.user = JSON.parse(localStorage.getItem('user'));
+    if(this.user == null) {
+      //Descomentar esto antes de desplegar
+      this.$router.push('/login');
+    }
   }
 }
 </script>
 
 <template>
   <div class="grid">
-    <div class="col-1" >
-      <sidebar-student-component></sidebar-student-component>
+    <div class="col-1" v-if="user">
+      <sidebarStudentComponent/>
     </div>
-
     <div class="col-11">
-      <router-view ></router-view>
+      <routerView @login="login" @logout="logout"/>
     </div>
-
   </div>
-
-
-
-
-
-
-
-
-
 </template>
 
 <style scoped>
-
-
-
+.grid{
+  display: flex;
+  flex-direction: row;
+}
 </style>
