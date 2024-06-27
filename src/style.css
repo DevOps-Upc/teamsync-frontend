@@ -3,6 +3,20 @@ h1 {
     color: #3b2ad8;
     font-weight: bold;
 }
+
+
 body{
     font-family: "Montserrat",serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+.align-center{
+    text-align: center;
+}
+.p-inputtext.p-invalid{
+    border-color: #ff0000;
+    background-color: #ffd4d4;
 }

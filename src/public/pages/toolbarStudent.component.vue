@@ -7,20 +7,16 @@ export default {
   components:{},
   data(){
     return{
-
       item:[
-        {label:'Home',to:`home`},
-        {label:'Task',to:`tasks`},
-        {label:'Members',to:`members`},
-        {label:'Request Expert',to:`experts`},
-        {label:'Calendar',to:`calendar`}
+        {label:'Home',to:'/home'},
+        {label:'Task',to:'/task'},
+        {label:'Members',to:'/members'},
+        {label:'Request Expert',to:'/request_experts'},
+        {label:'Calendar',to:'/calendar'}
       ]
-
     }
-
   },
   created() {
-
   },
   methods(){
 
@@ -29,12 +25,11 @@ export default {
 </script>
 
 <template>
-
   <pv-toolbar class="toolbarStudent">
     <template #center>
-      <div class="xl:flex-column sm:flex-column text-xs">
+      <div class="flex-column">
         <router-link v-for="item in item" :key="item.label" v-slot="{navigate,href}" :to="item.to">
-          <pv-button :href="href" class="p-button-text text-white sm:text-xs" @click="navigate">
+          <pv-button :href="href" class="p-button-text text-white" @click="navigate">
             {{item.label}}
           </pv-button>
         </router-link>
@@ -47,14 +42,7 @@ export default {
 </template>
 
 <style scoped>
-.toolbarStudent{
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  background-color: #757FFF;
-
-}
-
+  .toolbarStudent{
+    background-color: #2c3071;
+  }
 </style>
