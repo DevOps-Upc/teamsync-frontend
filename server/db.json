@@ -335,31 +335,31 @@
   ],
   "projects": [
     {
-      "id": "0",
+      "id": 0,
       "name": "Proyecto 1",
       "picture": "https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png",
       "id_user": 0
     },
     {
-      "id": "1",
+      "id": 1,
       "name": "Proyecto 2",
       "picture": "https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png",
       "id_user": 0
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Proyecto 3",
       "picture": "https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png",
       "id_user": 0
     },
     {
-      "id": "3",
-      "name": "Proyecto 4",
+      "id": 3,
+      "name": "Proyecto 5",
       "picture": "https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png",
       "id_user": 0
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Proyecto 2",
       "picture": "https://support-leagueoflegends.riotgames.com/hc/article_attachments/7396100117907/star-guardian-kaisa-icon.png",
       "id_user": 0

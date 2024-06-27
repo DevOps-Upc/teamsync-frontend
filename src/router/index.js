@@ -7,12 +7,24 @@ import LibraryComponent from "../library/pages/library.component.vue";
 import LoginComponent from "../account/pages/login.component.vue";
 import LogoutComponent from "../account/pages/logout.component.vue";
 import NotFoundComponent from "../public/pages/not.found.component.vue";
+import HomeProyectComponent from "../proyect/pages/home-proyect.component.vue";
+import LayoutComponent from "../proyect/pages/layout.component.vue";
 
 let id;
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {path:`/home`,component: HomeComponent, meta:{title:'HomeProject'} ,name:'myProject'},
+
+        {path:`/project/:id`,component:LayoutComponent,children:[
+                {path: "", redirect:"home"},
+                {path:`home`,component: HomeProyectComponent, meta:{title:'HomeProject'} ,name:'myProject'},
+                {path:`tasks`,component:TasksProyectComponent,meta:{title:'Tasks'}},
+                {path:`experts`,component:ExpertsComponent,meta:{title:'Experts'}},
+                {path:'members',component:MembersProyectComponent, meta:{title:'Members'}}
+            ]},
+
+        {path:'/home',component:HomeComponent,meta:{title:'HomePublic'}},
+
         {path:`/tasks`,component:TasksProyectComponent,meta:{title:'Tasks'}},
         {path:`/experts`,component:ExpertsComponent,meta:{title:'Experts'}},
         {path:'/members',component:MembersProyectComponent, meta:{title:'Members'}},

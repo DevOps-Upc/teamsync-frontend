@@ -18,7 +18,9 @@ export default {
     this.proyectService.getAllProjectsByIdUser(0)
         .then(response =>{
           this.proyects=response.data;
-        })
+        });
+    console.log("projectos")
+
   },
   methods:{
 
@@ -70,9 +72,13 @@ export default {
 .img-card{
   max-width: 100%;
   max-height: 100%;
-
+  transition: transform 0.3s ease;
   border-radius: 16px;
 
+}
+
+.img-card:hover {
+  transform: scale(1.05);
 }
 
 

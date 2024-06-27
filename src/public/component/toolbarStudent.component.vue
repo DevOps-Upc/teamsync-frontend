@@ -7,14 +7,17 @@ export default {
   components:{},
   data(){
     return{
-      items:[
-        {icon:"pi pi-home", to:'/home'},
-        {icon:"pi pi-briefcase", to:'/experts'},
-        {icon:"pi pi-book", to:'/library'},
-        {icon:"pi pi-bell", to:'/notifications'},
-        {icon:"pi pi-sign-out", to:'/logout'}
+
+      item:[
+        {label:'Home',to:`home`},
+        {label:'Task',to:`tasks`},
+        {label:'Members',to:`members`},
+        {label:'Request Expert',to:`experts`},
+        {label:'Calendar',to:`calendar`}
       ]
+
     }
+
   },
   created() {
 
@@ -44,13 +47,14 @@ export default {
 </template>
 
 <style scoped>
-  .toolbarStudent{
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    background-color: #757FFF;
-  }
+.toolbarStudent{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #757FFF;
+
+}
 
 </style>

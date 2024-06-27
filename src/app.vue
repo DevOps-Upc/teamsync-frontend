@@ -33,18 +33,15 @@ export default {
 
 <template>
   <div class="grid">
-    <div class="col-1" v-if="user">
+    <div class="col-1"  style="height: 100vh;" v-if="user">
       <sidebarStudentComponent/>
     </div>
-    <div class="col-11">
+    <div class="col-11" style="height: 100vh;">
       <routerView @login="login" @logout="logout"/>
     </div>
   </div>
 </template>
 
 <style scoped>
-.grid{
-  display: flex;
-  flex-direction: row;
-}
+
 </style>

@@ -46,13 +46,20 @@ export default {
   padding-top:70px ;
   text-align: center;
   width: 100px;
+
   background-color: #6161FF;
   height: 100vh;
+
   > img {
     border-radius: 100%;
     object-fit: cover;
     height: 70px;
     width: 70px;
+    transition: transform 0.3s ease;
+
+  }
+  >img:hover{
+    transform: scale(1.05);
   }
   .header-text{
     >h4{
@@ -69,5 +76,11 @@ export default {
 #icon{
   font-size:2rem;
   color:black;
+  transition: transform 0.3s ease;
+
 }
+#icon:hover{
+  transform: scale(1.05);
+}
+
 </style>
