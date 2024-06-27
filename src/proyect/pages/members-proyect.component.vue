@@ -101,7 +101,7 @@ export default {
   display:flex;
   justify-content: space-between;
 
-
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius:16px;
 
 

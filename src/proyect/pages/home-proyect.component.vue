@@ -157,7 +157,7 @@ export default {
   justify-content: space-between;
 
   border-radius:16px;
-
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding:5px;
   background-color: white;
   margin: 10px;
