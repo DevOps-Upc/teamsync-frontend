@@ -1,0 +1,153 @@
+<script>
+import { ExpertsApiService } from "../services/experts-api.service.js";
+import ExpertCard from "../components/expert-card.component.vue";
+export default {
+  name: "experts",
+  components: {ExpertCard},
+  title: "Experts",
+  data() {
+    return {
+      experts: [],
+      searchQuery: "",
+    }
+  },
+  computed: {
+    filteredExperts() {
+      return this.experts.filter(expert =>
+          expert.title.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
+    }
+  },
+  methods: {
+    async requestJoin(expert) {
+      // Aquí es donde harías la solicitud al servidor para agregar al experto al equipo
+      const response = await fetch('http://localhost:3000/prIntegrates', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          expertId: expert.id,
+          // Aquí necesitarías proporcionar el id del equipo al que se está uniendo el experto
+          teamId: this.teamId,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Error al agregar al experto al equipo');
+      }
+
+      const data = await response.json();
+
+      // Aquí es donde actualizarías el experto para reflejar que se ha unido al equipo
+      this.experts = this.experts.map(e => e.id === expert.id ? {...e, teamId: this.teamId} : e);
+    },
+  },
+  created() {
+    this.expertService = new ExpertsApiService();
+    this.expertService.getAllExperts()
+        .then(response => {
+          this.experts = response.data;
+          console.log('data: ');
+          console.log(response.data.experts);
+        });
+  }
+}
+</script>
+<template>
+  <h1>Profesionales</h1>
+  <div class="experts-view">
+    <div class="search-bar">
+      <input type="text" v-model="searchQuery" placeholder="Buscar por especialidad...">
+      <button><i class="pi pi-search" style="font-size: 2rem"></i>
+      </button>
+    </div>
+    <div class="card-container">
+      <div v-for="expert in filteredExperts" :key="expert.id" class="card-item">
+        <expert-card :expert="expert"></expert-card>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.experts-view {
+  padding: 20px;
+  background-color: #e0e7ff; /* Light blue background */
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #3f51b5; /* Purple color */
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  color: #3f51b5;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card-item {
+  flex: 1 1 calc(20% - 16px);
+  max-width: calc(20% - 16px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .card-item {
+    flex: 1 1 calc(25% - 16px);
+    max-width: calc(25% - 16px);
+  }
+}
+
+@media (max-width: 992px) {
+  .card-item {
+    flex: 1 1 calc(33.33% - 16px);
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-item {
+    flex: 1 1 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 576px) {
+  .card-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+</style>
