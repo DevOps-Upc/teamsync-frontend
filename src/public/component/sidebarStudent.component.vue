@@ -47,8 +47,7 @@ export default {
   text-align: center;
   width: 100px;
   background-color: #6161FF;
-  min-height: 100vh;
-  height: 100%;
+  height: 100vh;
   > img {
     border-radius: 100%;
     object-fit: cover;
