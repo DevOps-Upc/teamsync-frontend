@@ -25,7 +25,7 @@ export default {
       <h3 class="expert-title">{{ expert.title }}</h3>
     </template>
     <template #content>
-      <p class="expert-experience">Years of experience: {{ expert.experience }}</p>
+      <p class="expert-experience">{{ expert.bio }}</p>
     </template>
     <template #footer>
       <pv-button label="More Info" @click="showDialog = true" />
